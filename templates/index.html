@@ -1,0 +1,136 @@
+<!--
+index.html
+Matthew Percy and Mark Brierley
+TPJ655 - Raspberry Pi Car with Camera and Web App Control
+April 3, 2020
+HTML file for website design and contains AJAX calls back to app.py for motor control.
+AJAX call scripts adapted from https://stackoverflow.com/questions/42601478/flask-calling-python-function-on-button-onclick-event
+-->
+
+<head>
+  <link rel="stylesheet" href="{{ url_for('static',filename='styles/styles.css') }}">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+  <!--Calls stop() in app.py-->
+  <script type=text/javascript>
+          $(function() {
+            $('a#stop').bind('click', function() {
+              $.getJSON('/stop',
+                  function(data) {
+                //do nothing
+              });
+              return false;
+            });
+          });
+  </script>
+
+  <!--Calls forward() in app.py-->
+  <script type=text/javascript>
+          $(function() {
+            $('a#forward').bind('click', function() {
+              $.getJSON('/forward',
+                  function(data) {
+                //do nothing
+              });
+              return false;
+            });
+          });
+  </script>
+
+  <!--Calls left() in app.py-->
+  <script type=text/javascript>
+          $(function() {
+            $('a#left').bind('click', function() {
+              $.getJSON('/left',
+                  function(data) {
+                //do nothing
+              });
+              return false;
+            });
+          });
+  </script>
+
+  <!--Calls right() in app.py-->
+  <script type=text/javascript>
+          $(function() {
+            $('a#right').bind('click', function() {
+              $.getJSON('/right',
+                  function(data) {
+                //do nothing
+              });
+              return false;
+            });
+          });
+  </script>
+
+  <!--Calls reverse() in app.py-->
+  <script type=text/javascript>
+          $(function() {
+            $('a#reverse').bind('click', function() {
+              $.getJSON('/reverse',
+                  function(data) {
+                //do nothing
+              });
+              return false;
+            });
+          });
+  </script>
+
+  <!--Calls rev_left() in app.py-->
+  <script type=text/javascript>
+          $(function() {
+            $('a#rev_left').bind('click', function() {
+              $.getJSON('/rev_left',
+                  function(data) {
+                //do nothing
+              });
+              return false;
+            });
+          });
+  </script>
+
+  <!--Calls rev_right() in app.py-->
+  <script type=text/javascript>
+          $(function() {
+            $('a#rev_right').bind('click', function() {
+              $.getJSON('/rev_right',
+                  function(data) {
+                //do nothing
+              });
+              return false;
+            });
+          });
+  </script>
+</head>
+
+<body>
+  <h1>RasPi Car Control Center</h1>
+  <span>
+    <div class='container'>
+      <div class ='cameradiv'>
+      <h3 style='margin-left: 50px;'>Pi Camera View</h3>
+      <img class="camera" src="{{ url_for('video_feed') }}"> <!--Displays camera video feed-->
+      </div>
+      <h3>Controls</h3>
+      <form>
+        <table> <!--Displays various control buttons-->
+          <tr>
+            <td><a href=# id=left><button class='btn btn-default'><img class="buttonImage" src="{{ url_for('static',filename='left.png') }}"></button></a></td>
+            <td><a href=# id=forward><button class='btn btn-default'><img class="buttonImage" src="{{ url_for('static',filename='up.png') }}"></button></a></td>
+            <td><a href=# id=right><button class='btn btn-default'><img class="buttonImage" src="{{ url_for('static',filename='right.png') }}"></button></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><a href=# id=stop><button class='btn btn-default'><img class="buttonImage" src="{{ url_for('static',filename='stop.png') }}"></button></a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><a href=# id=rev_left><button class='btn btn-default'><img class="buttonImage" src="{{ url_for('static',filename='reverseleft.png') }}"></button></a></td>
+            <td><a href=# id=reverse><button class='btn btn-default'><img class="buttonImage" src="{{ url_for('static',filename='reverse.png') }}"></button></a></td>
+            <td><a href=# id=rev_right><button class='btn btn-default'><img class="buttonImage" src="{{ url_for('static',filename='reverseright.png') }}"></button></a></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </span>
+</body>

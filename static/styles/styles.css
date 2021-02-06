@@ -1,0 +1,52 @@
+/*
+styles.css
+Matthew Percy and Mark Brierley
+TPJ655 - Raspberry Pi Car with Camera and Web App Control
+April 3, 2020
+Style sheet for index.html
+*/
+
+body{
+  background: linear-gradient(71deg, rgba(55, 55, 55, 0.03) 0%, rgba(55, 55, 55, 0.03) 16.667%,rgba(111, 111, 111, 0.03) 16.667%, rgba(111, 111, 111, 0.03) 33.334%,rgba(230, 230, 230, 0.03) 33.334%, rgba(230, 230, 230, 0.03) 50.001000000000005%,rgba(129, 129, 129, 0.03) 50.001%, rgba(129, 129, 129, 0.03) 66.668%,rgba(77, 77, 77, 0.03) 66.668%, rgba(77, 77, 77, 0.03) 83.33500000000001%,rgba(190, 190, 190, 0.03) 83.335%, rgba(190, 190, 190, 0.03) 100.002%),linear-gradient(281deg, rgba(176, 176, 176, 0.03) 0%, rgba(176, 176, 176, 0.03) 16.667%,rgba(192, 192, 192, 0.03) 16.667%, rgba(192, 192, 192, 0.03) 33.334%,rgba(74, 74, 74, 0.03) 33.334%, rgba(74, 74, 74, 0.03) 50.001000000000005%,rgba(169, 169, 169, 0.03) 50.001%, rgba(169, 169, 169, 0.03) 66.668%,rgba(34, 34, 34, 0.03) 66.668%, rgba(34, 34, 34, 0.03) 83.33500000000001%,rgba(5, 5, 5, 0.03) 83.335%, rgba(5, 5, 5, 0.03) 100.002%),linear-gradient(196deg, rgba(98, 98, 98, 0.03) 0%, rgba(98, 98, 98, 0.03) 16.667%,rgba(208, 208, 208, 0.03) 16.667%, rgba(208, 208, 208, 0.03) 33.334%,rgba(63, 63, 63, 0.03) 33.334%, rgba(63, 63, 63, 0.03) 50.001000000000005%,rgba(180, 180, 180, 0.03) 50.001%, rgba(180, 180, 180, 0.03) 66.668%,rgba(200, 200, 200, 0.03) 66.668%, rgba(200, 200, 200, 0.03) 83.33500000000001%,rgba(59, 59, 59, 0.03) 83.335%, rgba(59, 59, 59, 0.03) 100.002%),linear-gradient(35deg, rgba(233, 233, 233, 0.03) 0%, rgba(233, 233, 233, 0.03) 16.667%,rgba(26, 26, 26, 0.03) 16.667%, rgba(26, 26, 26, 0.03) 33.334%,rgba(186, 186, 186, 0.03) 33.334%, rgba(186, 186, 186, 0.03) 50.001000000000005%,rgba(162, 162, 162, 0.03) 50.001%, rgba(162, 162, 162, 0.03) 66.668%,rgba(254, 254, 254, 0.03) 66.668%, rgba(254, 254, 254, 0.03) 83.33500000000001%,rgba(245, 245, 245, 0.03) 83.335%, rgba(245, 245, 245, 0.03) 100.002%),linear-gradient(294deg, rgba(157, 157, 157, 0.01) 0%, rgba(157, 157, 157, 0.01) 12.5%,rgba(125, 125, 125, 0.01) 12.5%, rgba(125, 125, 125, 0.01) 25%,rgba(120, 120, 120, 0.01) 25%, rgba(120, 120, 120, 0.01) 37.5%,rgba(19, 19, 19, 0.01) 37.5%, rgba(19, 19, 19, 0.01) 50%,rgba(111, 111, 111, 0.01) 50%, rgba(111, 111, 111, 0.01) 62.5%,rgba(140, 140, 140, 0.01) 62.5%, rgba(140, 140, 140, 0.01) 75%,rgba(114, 114, 114, 0.01) 75%, rgba(114, 114, 114, 0.01) 87.5%,rgba(94, 94, 94, 0.01) 87.5%, rgba(94, 94, 94, 0.01) 100%),linear-gradient(19deg, rgba(217, 217, 217, 0.02) 0%, rgba(217, 217, 217, 0.02) 20%,rgba(105, 105, 105, 0.02) 20%, rgba(105, 105, 105, 0.02) 40%,rgba(252, 252, 252, 0.02) 40%, rgba(252, 252, 252, 0.02) 60%,rgba(1, 1, 1, 0.02) 60%, rgba(1, 1, 1, 0.02) 80%,rgba(232, 232, 232, 0.02) 80%, rgba(232, 232, 232, 0.02) 100%),linear-gradient(90deg, rgb(22, 94, 235),rgb(126, 195, 9));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+table{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button{
+  width: 140px;
+  height: 140px;
+  margin: 5px;
+  border-radius: 30px;
+  border: solid black 2px;
+  box-shadow: 0px 0px 25px black;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.buttonImage{
+  width: 75%;
+  height: auto;
+  max-width: 100%;
+}
+
+.camera{
+  float: left;
+  border-radius: 30px;
+  border: solid black 2px;
+  box-shadow: 0px 0px 25px black;
+  margin-left: 50px;
+}
+
+.cameradiv{
+  float:left; 
+  margin-left:50px;
+}
