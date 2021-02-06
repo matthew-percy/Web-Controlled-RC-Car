@@ -13,8 +13,10 @@ The website displays a live camera feed along with buttons to control the moveme
 
 
 ## Screenshots
-![](pictures/IMG_0865.jpg =50x)
+### RC car
+![](pictures/IMG_0865.jpg)
 
-![](pictures/IMG_1.jpeg =250x)
+![](pictures/IMG_1.jpeg)
 
-![](screenshots/registration.png)
+### Web view
+![](pictures/webview.jpeg)
