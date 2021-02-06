@@ -13,7 +13,7 @@ The website displays a live camera feed along with buttons to control the moveme
 
 
 ## Screenshots
-![](screenshots/login.png)
+![](pictures/IMG_0865.jpg)
 
 ![](screenshots/home.png)
 
