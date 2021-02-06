@@ -13,8 +13,8 @@ The website displays a live camera feed along with buttons to control the moveme
 
 
 ## Screenshots
-![](pictures/IMG_0865.jpg)
+![](pictures/IMG_0865.jpg =50x)
 
-![](pictures/WhatsApp Image 2020-04-02 at 5.57.55 PM.jpeg)
+![](pictures/IMG_1.jpeg =250x)
 
 ![](screenshots/registration.png)
